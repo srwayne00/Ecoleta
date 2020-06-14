@@ -1,0 +1,93 @@
+body {
+    background-color: white;   /*Cor de fundo da parte de baixo*/
+}
+
+body ::after {                   /*2° config do body (after = depois)*/
+    content: "";                 /*Conteudo (vazio)*/
+    position: absolute;          /*Posição do plano de fundo*/
+    background: #f0f0f5;       /*Cor de fundo */
+    top: 0;                      /*Distancia da margem superior*/
+    right: 0;                    /*Distancia da margem direita*/
+    left: 0;                     /*Distancia da margem esquerda*/
+    bottom: 0;                   /*Distancia da margem inferior*/
+    height: 16rem;               /*Alturad do background*/
+    z-index: -1;                 /*Config do eixo z (profundidade)*/
+}
+
+#page-search-results {          /*Config da page*/
+    width: 90%;                 /*Largura da caixa*/
+    max-width: 1100px;          /*Largura maxima da caixa*/
+    margin: 0 auto;             /*margens 0 para top e bottom e auto para  right e left*/
+}
+
+#page-search-results header {   /*Config da tag header*/
+    margin-top: 48px;           /*Distancia do top*/
+    display: flex;              /*Define que fiquem um ao lado do outro */
+    justify-content: space-between; /*Espaço entre os dois conteudos*/
+    align-items: center;        /*Alinha no centro os conteudos*/
+}
+
+#page-search-results header a {  /*Config do link da tag header*/
+    color: var(--title-color);  /*Cor definida na raiz do doc */
+    font-weight: bold;          /*Peso da fonte (negrito)*/
+    display: flex;              /*Define que fiquem um ao lado do outro */
+    align-items: center;        /*Alinha no centro os conteudos*/
+}
+
+#page-search-results header a span {/*Config da imagem do voltar para home*/
+    margin-right: 16px;         /*margem direita em relação ao texto*/
+    background-image: url('../assets/arrow-left.svg'); /*Imagem da seta*/
+    display: flex;              /*Define que fiquem um ao lado do outro */
+    width: 20px;                /*Largura da imagem*/
+    height: 24px;               /*Altura da imagem*/
+}
+
+main {                          /*Config da tag main*/
+    margin: 48px;               /*Distancia do top e bottom*/
+
+}
+
+main h4 {                       /*Config da tag h4 do main*/
+    font-weight: normal;        /*Peso da fonte*/
+    font-family: Roboto, sans-serif; /*Nome da fonte*/
+    margin-bottom: 32px;        /*Distancia em relação ao bottom*/
+}
+
+main .cards {                   /*Config da tag pai cards*/
+    display: grid;              /* cria a grid e habilita opções de grid*/
+    grid-template-columns: 1fr 1fr 1fr; /*Cria 3 colunas calculadas jogando os itens q sobram p baixo*/
+    gap: 24px;                  /*Faz a separação entre colunas e linhas apenas no grid*/
+}
+
+main .card img {                /*Config da imagem no card (filho) do main*/
+    width: 100%;                /*Largura da imagem*/
+    height: 150px;              /*Altura da imagem*/
+    object-fit: cover;          /*Aumenta a imagem conforme o tamanho da pagina*/
+    border-radius: 8px 8px 0 0; /*Arredondamento das bordas*/
+}
+
+main .card h1{                  /*Config da tag h1 do card*/
+    margin-top: 32px;           /*Distancia em relação ao top*/
+    font-size: 36px;            /*Tamanho da fonte*/
+    line-height: 41px;          /*Tamanho da linha*/
+    color:#322153;            /*Cor da fonte*/
+}
+
+main .card h3 {                 /*Config da tag h3 do card*/
+    margin: 24px 0;             /*Margins 24px top e bottom e 0 para right e left*/
+    font-family: Roboto;        /*Nome da fonte*/
+    font-weight: bold;          /*Peso da fonte*/
+    font-size: 24px;            /*Tamanho da fonte*/
+    line-height: 34px;          /*Tamanho da linha*/
+    color: var(--primary-color);/*Cor da fonte*/
+}
+
+main .card p {                  /*Config da tag p do card*/
+    font-size: 16px;            /*Tamanho da fonte*/
+    line-height: 26px;          /*Altura da linha*/
+    color: #6c6c80;           /*Cor da fonte*/
+}
+
+
+
+

@@ -1,0 +1,54 @@
+/*media query são usadas para Responsividade, que é para fazer com que a 
+aplicação se adapte a diferentes tipos de telas*/
+
+@media (max-width: 900px) {             /*Regra para quando a tela for menor que 900 pixeis */
+    #page-home {                        /*Comfig do background da page home*/
+        background-position-x: 70vw;    /*Diminui a quantidade de elemento exibido*/
+    }
+
+    #page-home .content {               /*Comfig do conteudo apenas para telas menores que 900px*/
+        align-items: center;            /*Alinha os itens no centro */
+        text-align: center;             /*Alinha o texto no centro */
+    }
+
+    #page-home header a {               /*Comfig do header apenas para telas menores que 900px*/
+        position: absolute;             /*Fixa o plano de fundo */
+        bottom: 48px;                   /*Distancia do rodape da pagina*/
+        left: 50%;                      /*Distancia da margem esquerda */
+        transform: translateX(-50%);    /*Tras para o centro o texto */
+    }
+
+    #page-home main {                   /*Comfig da page apenas para telas menores que 900px*/
+        align-items: center;            /*Alinha os itens no centro */
+    }
+
+    #page-search-results .cards {       /*Comfig da page apenas para telas menores que 900px*/
+        grid-template-columns: 1fr;     /*Cria uma coluna para os cards*/
+    }
+
+    #page-search-results .cards img {   /*Comfig da page apenas para telas menores que 900px*/
+        height: 250px;                  /*Aumenta a imagem para 200px*/
+    }
+
+    #page-create-point .field-group {   /*Comfig da page apenas para telas menores que 900px*/
+        flex-direction: column;         /*Deixa os campos do cadastro um embaixo do outro como uma coluna*/
+    }
+
+    #page-create-point .field-group .field + .field { /*Comfig da page apenas para telas menores que 900px*/
+        margin-left: 0;                 /*Tirar a margem esquerda, alinhando os campos*/
+    }
+}
+
+
+@media (min-width: 1700px) {            /*Regra para quando a tela for menor que 1700 pixeis */
+    #page-home {                        /*Comfig da page apenas para telas menores que 1700px*/
+        background-position-x: 40vw;    /*Diminui a quantidade de elemento exibido*/
+    }
+}
+
+
+@media (max-height: 760px) {             /*Regra para quando a tela for maior que 760 pixeis */
+    #page-home {                         /*Comfig da page apenas para telas maiores que 760px*/
+        background-position-y: 200px;     /*Diminui a quantidade de elemento exibido*/
+    }
+}

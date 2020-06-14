@@ -1,0 +1,85 @@
+#modal {                            /*Config da tela de modal*/
+    background-color: #0e0a14ef;  /*Cor de fundo do modal com alfa*2 letras depois do rgb*/  
+    height: 100vh;                  /*Define em 100 a altura vh (viewport heigt ) */
+    width: 100vw;                   /*Define a largura em 35 vw (view width) */
+    position: fixed;                /*Fixa a tela * remove o scroll*/
+    top: 0;                         /*Joga a tela preta do modal para o top da page*/
+    display: flex;                  /*Define que fiquem um ao lado do outro */
+    justify-content: center;        /*Espaço entre os dois conteudos*/
+    align-items: center;            /*Alinha no centro os conteudos*/
+    transition: 400ms;              /*Tempo de transição de uma cor para outra na area do link (em micro segundos) */
+}
+
+#modal.hide {                       /*Config da class Hide do modal*/
+    display: none;                  /*Desliga o modal*/
+}
+
+#modal .content {                   /*Config do conteudo*/
+    color: white;                 /*Mudar a cor da fonte do Conteudo*/
+    width: 420px;                   /*Largura do conteudo*/
+}
+
+#modal .header {                    /*config do header*/
+    display: flex;                  /*Define que fiquem um ao lado do outro */
+    align-items: center;            /*Alinha no centro os conteudos*/
+    justify-content: space-between; /*Espaço entre os dois conteudos*/
+    margin-bottom: 48px;            /*Distancio do bottom em relação ao conteudo de baixo*/
+}
+
+#modal .header a {                  /*Config do link do header (imagem de x do modal)*/
+    background-image: url(/assets/x.svg);  /*imagem do link de fechar (x)*/
+    width: 20px;                    /*largura da imagem*/
+    height: 20px;                   /*Altura da imagem*/
+    display: flex;                  /*Define que fiquem um ao lado do outro */
+    font-size: 0.01px;              /*tamanho do texto da imagem (fechar)*/
+}
+
+#modal .header h1 {                 /*Config do h1 do header*/
+    color: white;                 /*Cor da fonte*/
+    font-size: 36px;                /*Tamnaho da fonte*/
+    line-height: 42px;              /*Altura da linha*/
+}
+
+#modal form label {                 /*Config do label(titulo do campo de escrita)*/
+    font-size: 14px;                /*Tamanho da fonte*/
+    line-height: 16px;              /*Tamanho da linha*/
+    display: block;                 /*Disposição de um embaixo do outro*/
+    margin-bottom: 8px;             /*Distancia do item de baixo (campo)*/
+}
+
+#modal form .field {                /*Config do campo de escrita e imagem*/
+    display: flex;                  /*Define um ao lado do outro*/
+}
+
+#modal form input {                 /*Config do input (camnpo de escrita)*/
+    flex: 1;                        /*Preenche a imagem ate o icone de lupa*/
+    background-color: #f0f0f5;    /*Cor de fundo do campo de escrita*/
+    border-radius: 8px 0 0 8px;     /*Arredondamento das bordas do campo de escrita*/
+    border: 0;                      /*Largura da borda*/
+    padding: 16px 24px;             /*Largura e altura da area de escrita*/
+    font-size: 16px;                /*Tamanho da letra*/
+    color: #6c6c80;               /*Cor do texto dentro do campo de escrita*/
+}
+
+#modal form button {                /*Config do botão*/
+    width: 72px;                    /*Largura da area do botão*/
+    height: 72px;                   /*Altura da area do botão*/
+    background-color: var(--primary-color); /*Cor de fundo do botão*/
+    border: 0;                      /*Bordas do botão*/
+    border-radius:0 8px  8px 0;     /*Arredondamento das bordas do botão*/
+}
+
+#modal form button:hover {          /*Config da transformação do botão quando passar o cursor por cima*/
+    background-color: #2fb85e;    /*Cor que irá alternar*/
+}
+
+#modal.point .content {             /*Config do modal point-created*/
+    display: flex;                  /*Define que fiquem um ao lado do outro */
+    flex-direction: column;         /*Define que fiquem um embaixo do outro como um coluna*/
+    align-items: center;            /*Alinha no centro os conteudos*/
+}
+
+#modal.point h1 {                  /*Config do h1 do point no modal point-created*/
+    color: white;                /*Cor do texto no modal*/
+    margin-top: 32px;              /*Distancia em relação ao elemento de cima*/
+}

@@ -1,0 +1,30 @@
+:root {                                   /* Define uma raiz para o doc */
+    --title-color: #322153;             /*Atalho de cor na raiz (Roxo)*/
+    --primary-color: #34cb79;           /*Atalho de cor na raiz (verde)*/
+}
+
+* {                                       /*Definição para todos */
+    margin: 0;                            /*zera as margins de todos os elementos */
+    padding: 0;                           /*zera a distancia de todos os elementos */
+    box-sizing: border-box;               /*Define que a caixa tera o tamanho da borda*/
+}
+
+html {                                    /*Config da page*/
+    font-family: Roboto, sans-serif;      /*Fonte da page*/
+}
+
+body {                                    /*Config do corpo da page*/
+    background-color: #f0f0f5;          /*Cor de fundo da page */
+    -webkit-font-smoothing: antialiased;  /*Melhora a view da fonte */
+}
+
+a {                                       /*Config geral dos links da page*/
+    text-decoration: none;                /*Tira o sublinhado debaixo do link */
+}
+
+h1, h2, h3, h4, h5, h6 {                  /*Config geral dos header da page*/
+    font-family: Ubuntu, sans-serif;    /*Fonte para os headers */
+    color: var(--title-color);            /*Cor definida na raiz do doc */ 
+}
+
+

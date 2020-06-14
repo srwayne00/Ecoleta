@@ -1,0 +1,152 @@
+#page-create-point {            /*Config da page*/
+    width: 90%;                 /*Largura da caixa*/
+    max-width: 1100px;          /*Largura maxima da caixa*/
+    margin: 0 auto;             /*margens 0 para top e bottom e auto para  right e left*/
+}
+
+#page-create-point header {     /*Config da tag header*/
+    margin-top: 48px;           /*Distancia do top*/
+    display: flex;              /*Define que fiquem um ao lado do outro */
+    justify-content: space-between; /*Espaço entre os dois conteudos*/
+    align-items: center;        /*Alinha no centro os conteudos*/
+}
+
+#page-create-point header a {   /*Config do link da tag header*/
+    color: var(--title-color);  /*Cor definida na raiz do doc */
+    font-weight: bold;          /*Peso da fonte (negrito)*/
+    display: flex;              /*Define que fiquem um ao lado do outro */
+    align-items: center;        /*Alinha no centro os conteudos*/
+}
+
+#page-create-point header a span {/*Config da imagem do voltar para home*/
+    margin-right: 16px;          /*margem direita em relação ao texto*/
+    background-image: url('../assets/arrow-left.svg'); /*Imagem da seta*/
+    display: flex;              /*Define que fiquem um ao lado do outro */
+    width: 20px;                /*Largura da imagem*/
+    height: 24px;               /*Altura da imagem*/
+}
+
+form {                          /*Config da tag do formulario*/
+    background-color: white;  /*Fundo do form*/
+    margin: 80px auto;          /*Alinhamento da caixa pelo lado de fora*/
+    padding:64px ;              /*Tamanho da area do form*/
+    border-radius: 38px;         /*Arredondamento das bordas da area*/
+    max-width: 730px;           /*Largura max da area*/ 
+}
+
+form h1 {                       /*Config do h1 do form*/
+    font-size: 36px            /*Altera o tamanho da fonte*/
+}
+
+form fieldset {                 /*Config do fieldset*/
+    margin-top: 64px;           /*Distancia do top*/
+    border: 0;                  /*Bordas*/
+}
+
+form legend {                   /*Config da tag legend dentro de form/fieldset*/
+   margin-bottom: 40px;         /*Distancia em relação ao bottom*/
+   display: flex;               /*Define que fiquem um ao lado do outro */
+   align-items: center;         /*Alinha no centro os conteudos*/
+   justify-content: space-between;  /*Espaço entre os dois conteudos*/  
+   width: 100%;                  /*Largura da caixa*/
+}
+
+form legend h2 {                /*Config do h1 do form*/
+    font-size: 24px;            /*Altera o tamanho da fonte*/
+}
+
+form legend span {              /*Config do span do legend do form*/
+    font-size: 14px;            /*Altera o tamanho da fonte*/
+    color: var(--title-color);  /*Cor do texto do span*/
+}
+
+form .field {                   /*Config do field*/  
+    flex: 1;                    /*Faz com que os campos fiquem do tamanho do formulario*/
+    display: flex;              /*Define que fiquem um ao lado do outro */
+    flex-direction: column;     /*Define que fiquem em formato de coluna */
+    margin-bottom: 24px;        /*distancia entre os campos*/
+}
+
+form .field-group {             /*Config do field-group*/
+    display: flex;              /*Define que fiquem um ao lado do outro */
+}
+
+form input,                     /*Config dos inputs*/
+form select {                   /*Config dos selects*/
+    background-color: #f0f0f5;/*Cor de fundo dos campos*/
+    border: 0;                  /*Retira a borda*/
+    padding: 16px 24px;         /*Tamanho dos campos de peenchimento*/
+    font-size: 16px;            /*Tamanho da fonte */
+}
+
+form select {                   /*config de navegadores*/
+    -webkit-appearance:none ;   /*config no chrome*/
+    -moz-appearance: none;      /*config no mozila*/
+    appearance: none;           /**/
+}
+
+form label {                    /*config das labels*/
+    font-size: 14px;            /*Tamanho das fontes*/
+    margin-bottom: 8px;         /*Distancia do top*/
+}
+
+form .field-group .field + .field { /*Usado apenas para fields dentro de groups*/
+    margin-left: 24px;          /*Distancia entre os campos*/
+}
+
+form button {                   /*Config do botão*/
+    width: 260px;               /*Largura do botão*/
+    height: 56px;               /*Altura do botão*/  
+    background-color: var(--primary-color); /*Cor do fundo do botão*/
+    border-radius: 8px;         /*Arredondamento da area do botão*/
+    color: white;             /*Cor do texto do botão*/
+    font-weight: bold;          /*Peso da fonte (negrito)*/
+    font-size: 16px;            /*Tamanho da fonta do botão*/
+    border: 0;                  /*Remove a borda*/
+    margin-top: 40px;           /*Distancia do top*/
+    transition: background-color 400ms;  /*Tempo de transição de cores do hover*/
+}
+
+form button:hover {             /*Configuração do comportamento do botão*/
+    background-color: #2fb86e;/*Cor da transição quando mouse passar por cima*/
+}
+
+.items-grid {                   /*Config da grade dos items de coleta*/
+    display: grid;              /* cria a grid e habilita opções de grid*/
+    grid-template-columns: 1fr 1fr 1fr; /*Cria 3 colunas calculadas jogando os itens q sobram p baixo*/
+    gap: 16px;                  /*Faz a separação entre colunas e linhas apenas no grid*/
+}
+
+.items-grid li {                /*Config da lista do itens da grade*/
+    background-color: #f5f5f5;/*Cor de fundo dos itens da lista*/
+    list-style: none;           /*Remove os bullets da lista (pontinhos que indicam que é uma lista)*/
+    border: 2px solid #f5f5f5;/*Config das bordas dos itens*/
+    border-radius: 8px;         /*Arredondamento das bordas dos itens*/
+    height: 180px;              /*Aumenta o tamanho dos itens para 180px*/
+    padding: 32px 24px 16px;    /*Distanciamento dos elementos *dentro da area* dos itens*/
+    display: flex;              /*Define os elementos dentro do item lista para lado a lado*/
+    flex-direction: column;     /*Define os elementos dentro do item lista para um embaixo do outro*/
+    align-items: center;        /*Alinha os itens no centro horizontalmente*/
+    justify-content: space-between;/*Justifica os itens no centro verticalmente*/
+    text-align: center;         /*Alinha o texto no centro horizontalmente*/
+    cursor: pointer;            /*cria uma mão no lugar da seta quando em cima do elemento*/
+}
+
+.items-grid li span{            /*Config dos itens span da lista do itens da grade*/
+    margin-top: 12px;           /*distancia do top em relação ao item de cima*/
+    flex: 1;                    /*Preenche automatico os espaços*/
+    display: flex;              /*Alinha lado a lado*/
+    align-items: center;        /*centrar os itens do span (texto dos itens)*/
+    color: var(--title-color);  /*Cor do texto do botão *Cor definida na raiz do doc */
+}
+
+.items-grid li.selected {       /*atenção pois li tem que esta colado no selected*Config dos itens selecionados da lista do itens da grade*/
+    background: #e1faec;      /*cor de fundo do item depois de selecionado*/
+    border: 2px solid #34cb79;/*Cor e tamnanho das bordas dos itens depois de selecionado*/
+}
+
+.items-grid li img,             /*Config do comportamento da imagem e texto dos itens da lista */
+.items-grid li span {           /*Config do comportamento da imagem e texto dos itens da lista */
+    pointer-events: none;       /*A imagem e o texto não são clicaveis*/
+}       
+
